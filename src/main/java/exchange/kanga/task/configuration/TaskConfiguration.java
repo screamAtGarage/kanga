@@ -23,8 +23,6 @@ import static java.util.Map.entry;
 @EnableWebSecurity
 public class TaskConfiguration {
 
-
-
     @Bean
     public SecurityFilterChain filterChain(HttpSecurity http) throws Exception {
         DefaultBearerTokenResolver resolver = new DefaultBearerTokenResolver();

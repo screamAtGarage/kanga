@@ -3,7 +3,7 @@ package exchange.kanga.task.data;
 import lombok.Data;
 
 @Data
-public class Pairs {
+public class Pair {
 
     String ticker_id;
     String base;

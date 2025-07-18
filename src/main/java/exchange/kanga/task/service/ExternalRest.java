@@ -2,7 +2,7 @@ package exchange.kanga.task.service;
 
 import exchange.kanga.task.configuration.Kanga;
 import exchange.kanga.task.data.OrderBook;
-import exchange.kanga.task.data.Pairs;
+import exchange.kanga.task.data.Pair;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -28,10 +28,10 @@ public class ExternalRest {
         var ob = getOrderBook("BTC_USD");
     }
 
-    public List<Pairs> getPairs() {
+    public List<Pair> getPairs() {
         return restClient.get()
                 .uri("/pairs")
-                .retrieve().body(new ParameterizedTypeReference<List<Pairs>>() {});
+                .retrieve().body(new ParameterizedTypeReference<List<Pair>>() {});
     }
 
     public OrderBook getOrderBook(String market) {
