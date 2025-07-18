@@ -3,11 +3,13 @@ package exchange.kanga.task.data;
 import lombok.Data;
 
 import java.sql.Timestamp;
+import java.util.List;
 
 @Data
 public class OrderBook {
 
-    public String ticker_id;
-    public Timestamp timestamp;
-
+    String ticker_id;
+    Timestamp timestamp;
+    List<Offer>  bids;
+    List<Offer>  asks;
 }
