@@ -47,7 +47,6 @@ public class Calculation {
         rank.getRanking().put("group2", g2);
         rank.getRanking().put("group1", g1);
 
-
         sortRank(rank);
         this.rank = rank;
     }

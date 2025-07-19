@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 public class TaskRest {
 
     @Autowired
-    Calculation calculation;
+    public Calculation calculation;
 
 
     @PostMapping("/calculate")
